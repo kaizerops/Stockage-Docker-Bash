@@ -1,0 +1,8 @@
+services:
+  owncloud:
+    image: owncloud:latest
+    restart: always
+    ports:
+      - "80:80"
+    volumes:
+      - ./owncloud_data:/var/www/html
